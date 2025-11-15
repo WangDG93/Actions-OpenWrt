@@ -14,9 +14,9 @@ on:
           - false
   
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
   CONFIG_FILE: 'config/XIAOMI_R3.config'
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-24.10
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
