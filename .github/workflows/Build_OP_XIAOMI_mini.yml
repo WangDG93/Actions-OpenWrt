@@ -125,7 +125,7 @@ jobs:
       run: |
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
         cat <<EOF > release.txt
-        🚀 OpenWrt firmware for XIAOMI_R3
+        🚀 OpenWrt firmware for XIAOMI_mini
         --------------
         源码: $REPO_URL
         分支: $REPO_BRANCH
