@@ -26,3 +26,5 @@ git clone https://github.com/lkiuyu/luci-app-temp-status package/luci-app-temp-s
 git clone https://github.com/lkiuyu/DbusSmsForwardCPlus package/DbusSmsForwardCPlus
 git clone https://github.com/linkease/istore package/istore
 
+
+curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh
