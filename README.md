@@ -1,5 +1,3 @@
-https://github.com/xuxin1955/Actions-OpenWrt/raw/main/pics/tb_image_share_1767625501634.png
-
 高通骁龙410云编译immortalwrt
 
 固件主要添加超多 无线网卡驱动为目的!
@@ -51,7 +49,7 @@ kmod-rtw88-8822cu和rtl8812cu通用
 需要其他插件自行通过config_small配置添加，注意同时开启对应依赖选项
 
 
-
+https://qqbot.ugcimg.cn/1106413613/28efddef1be940bee43f05f27758994db2be56c8/916b254e6bf0605a98dadfce2eb6e89b
 
 ## Credits
 
