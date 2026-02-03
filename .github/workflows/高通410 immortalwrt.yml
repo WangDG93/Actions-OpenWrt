@@ -158,11 +158,14 @@ jobs:
       run: |
         cd openwrt
         expect -c '
-         set timeout 20
+         set timeout 30
          spawn script -q -c "make menuconfig" /dev/null
+         expect "Target System"
+         after 200
          send "\033\033\n"
          expect eof
         '
+
 
        
     - name: 自动上传编译配置
