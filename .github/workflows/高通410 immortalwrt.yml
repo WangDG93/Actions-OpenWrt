@@ -100,7 +100,9 @@ jobs:
     - name: Enable CCache
       run: |
         cd $GITHUB_WORKSPACE/openwrt
+        mkdir -p build
         echo "ENABLE_CCACHE='true'" >> build/settings.ini
+        export CCACHE_DIR=$GITHUB_WORKSPACE/openwrt/ccache
         ccache -M 10G
 
 
@@ -108,11 +110,11 @@ jobs:
       uses: actions/cache@v3
       with:
          path: |
-            openwrt/dl
-            openwrt/ccache
+            ${{ github.workspace }}/openwrt/dl
+            ${{ github.workspace }}/openwrt/ccache
          key: ${{ runner.os }}-openwrt-${{ hashFiles('openwrt/.config') }}
 
-    - name:  files 克隆大法
+    - name:  files
       run: cp -r files openwrt/files
 
     - name: Load custom feeds
