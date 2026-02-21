@@ -16,11 +16,11 @@ on:
         type: boolean
 
 env:
-  CONFIG_FILE: 'config/040.config'
+  CONFIG_FILE: 'config/openwrt.040G.config'
   REPO_URL: https://github.com/xiangtailiang/openwrt
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  DIY_P4_SH: diy-part3.sh
+  DIY_P4_SH: diy-part4.sh
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
