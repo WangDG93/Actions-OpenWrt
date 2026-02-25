@@ -10,11 +10,6 @@ echo 'src-git QModem https://github.com/FUjr/QModem' >> feeds.conf.default
 # OpenClash
 git clone --depth 1 https://github.com/vernesong/OpenClash.git OpenClash
 
-# === 新增：恢复 targets feed ===
-echo 'src-git targets https://github.com/openwrt/targets.git' >> feeds.conf.default
-
-# === 屏蔽 xuxin1955 的 openstick feed ===
-sed -i '/^src-git-full openstick https:\/\/github.com\/xuxin1955\/openstick-feeds.git/s/^/#/' feeds.conf.default
 
 # temp
 git clone https://github.com/gSpotx2f/luci-app-cpu-status package/luci-app-cpu-status
